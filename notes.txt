@@ -1,0 +1,4 @@
+Look at bitwise operators, binary operations
+
+operators in, not in and is, is not are useful in conditional loops
+

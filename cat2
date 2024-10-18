@@ -1,0 +1,22 @@
+from animal import Animal
+from leg import Leg
+
+class Cat(Animal): #inherit Animal class
+    left_leg = Leg()
+    right_leg = ()
+    name  = ""
+    
+    def __init__(self, cat_name = None): #constructor, whenever the class is called, it runs the constructor
+        if cat_name is None:
+            self.name = "No name"
+        else:
+            self.name = cat_name
+    
+    def show(self): #this overrides the show fcn in the inherited classes
+        print(self.name)
+        super().show() #this is how you call a fcn of an inherited class that has the same name as one that you created
+    pass
+
+Salem = Cat("Salem")
+Salem.eyes = 1
+Salem.show()
